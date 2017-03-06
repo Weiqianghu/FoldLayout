@@ -229,5 +229,4 @@ public class FoldLayout extends ViewGroup {
             return true;
         }
     }
-
 }

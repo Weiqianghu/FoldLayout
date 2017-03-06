@@ -26,4 +26,6 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:25.0.0'
     testCompile 'junit:junit:4.12'
+    // https://mvnrepository.com/artifact/com.nineoldandroids/library
+    compile group: 'com.nineoldandroids', name: 'library', version: '2.4.0'
 }

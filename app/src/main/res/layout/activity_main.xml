@@ -1,61 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
+<com.huweiqiang.customviewstudy.class8.LeftDrawerLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
+    android:id="@+id/dl"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
     tools:context="com.huweiqiang.customviewstudy.MainActivity">
 
-    <com.huweiqiang.customviewstudy.class8.FoldLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:paddingBottom="30dp"
+        android:paddingLeft="30dp"
+        android:paddingTop="50dp">
 
-        <!--<ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:scaleType="centerCrop"
-            android:src="@drawable/bigbig"/>-->
+        <TextView
+            android:id="@+id/tv_mail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="jiangqqlmj@163.com"
+            android:textColor="#ffffff"
+            android:textSize="15sp"/>
 
-        <LinearLayout
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff">
+
+        <com.huweiqiang.customviewstudy.class8.VDHLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <TextView
+            <com.huweiqiang.customviewstudy.class8.RoundImageView
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:text="text 1"/>
+                android:layout_height="0dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:src="@drawable/bigbig"
+                app:borderRadius="20dp"
+                app:type="round"/>
 
-            <ImageView
+            <com.huweiqiang.customviewstudy.class8.RoundImageView
                 android:layout_width="match_parent"
-                android:layout_height="120dp"
-                android:scaleType="centerCrop"
-                android:src="@drawable/bigbig"/>
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:src="@drawable/bigbig"
+                app:type="circle"/>
 
-            <TextView
+            <com.huweiqiang.customviewstudy.class8.RoundImageView
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:text="text 3"/>
-
-            <com.huweiqiang.customviewstudy.class8.FoldLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="120dp"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/big"/>
-            </com.huweiqiang.customviewstudy.class8.FoldLayout>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/colorPrimary"/>
-        </LinearLayout>
-
-    </com.huweiqiang.customviewstudy.class8.FoldLayout>
-
-</FrameLayout>
+                android:layout_height="0dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:src="@drawable/big"
+                app:borderRadius="20dp"
+                app:type="round"/>
+        </com.huweiqiang.customviewstudy.class8.VDHLayout>
+    </RelativeLayout>
+</com.huweiqiang.customviewstudy.class8.LeftDrawerLayout>
